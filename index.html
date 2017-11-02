@@ -6,4 +6,4 @@
 </ul>
   <script type="text/javascript" src="./beepbox-synth.js"></script>
 <script>if(location.hash.length > 1){var synth = new beepbox.Synth(location.hash.slice(1));}else{var synth = new beepbox.Synth("")};
-setInterval(function (){document.getElementById("range").value = synth._bar + 1},1000)</script>
+setInterval(function (){document.getElementById("time").value = synth._bar + 1},1000)</script>
