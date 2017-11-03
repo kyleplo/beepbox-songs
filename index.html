@@ -6,5 +6,6 @@
   <li><a href="#5s0kbl00e0ft7m0a3g0fj7i0r1w1110f5000d0111c0000h0000v0000o3210b4x8h4g00d3gh4h4h4h4h4g004x8i4x8i4h4h4h4h4h4p21zFzzwj3w50sEeg2w791A0E3BMddeQ6g2we90O0k1V8cw50s1wGqgFzzAqy82Cee1ce0k1Owp0a0YA6g2wen0QQwkN93g5c21k200">Pixel Dance</a>
 </ul>
   <script type="text/javascript" src="./beepbox-synth.js"></script>
-<script>if(location.hash.length > 1){var synth = new beepbox.Synth(location.hash.slice(1));}else{var synth = new beepbox.Synth("")};
-setInterval(function (){document.getElementById("time").value = synth._bar + 1},1000)</script>
+<script>if(location.hash.length > 1){var synth = new beepbox.Synth(location.hash.slice(1));synth.play();}else{var synth = new beepbox.Synth("")};
+setInterval(function (){document.getElementById("time").value = synth._bar + 1},1000);
+window.addEventListener("hashchange", function (){var synth = new beepbox.Synth(location.hash.slice(1));synth.play();}, false);</script>
